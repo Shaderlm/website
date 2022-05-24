@@ -1,0 +1,567 @@
+body {
+    margin: 0 0 75px 0;
+    padding: 20px;
+    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+}
+
+h2{
+    font-weight: 500;
+}
+
+.fl::first-letter{
+    margin-left: 25px;
+    font-size: 1.5em;
+}
+
+#topNav {
+    width: 100%;
+    height: 50px;
+    padding-left: 120px;
+    border-bottom: solid 0.2px #ebe6e6;
+    line-height: 35px;
+}
+
+#topNav i, #topNav p{
+    display: inline-block;
+}
+
+#topNav .i{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+}
+
+#topNav p{
+    margin-right: 25px;
+}
+
+#numTel{
+    font-weight: bold;
+}
+
+
+#Nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15%;
+}
+.sousnav{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 10px;
+}
+
+.souslignenav{
+    width: 0%;
+    height: 5px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+    border-top: solid rgba(62, 187, 214, 0.4) 5px;
+}
+.sousnav:hover> .souslignenav{
+    border-top: solid rgba(62, 187, 214, 0.6) 7px;
+    width: 95%;
+}
+
+#Nav a{
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #603D07;
+    font-size: 20px;
+}
+#Nav #transformHover:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+#Nav img{
+    width: 150px;
+    height: auto;
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#logo p{
+    text-align: center;
+    line-height: 10px;
+    white-space: nowrap;
+    border-top: solid 1px rgba(149, 196, 40, 0.5);
+    line-height: 30px;
+    font-size: 15px;
+    color: #603D07;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.57);
+}
+
+#sous-header{
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 40%;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px black;
+}
+
+.header1{
+    background: url("Images/Pain2.jpg");
+}
+.headerBoul{
+    background: url("Images/vitrinepain.jpg");
+    background-position: 50% 25%;
+}
+.headerPat{
+    background: url("Images/vitrinepatisserie.jpg");
+    background-position: 50% 75%;
+}
+.headerChoc{
+    background: url("Images/vitrinechocolaterie.jpg");
+    background-position: 75% 75%;
+}
+#main{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.titreh2{
+    width: 100%;
+    height: 40px;
+    margin-top: 100px;
+    border-bottom: solid 1px rgba(149, 196, 40, 0.5);
+    text-align: center;
+    margin-bottom: 50px;
+}
+#heighttitreh2{
+    height: 60px !important; 
+}
+
+#container-item{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    width: 28%;
+}
+.item-photo{
+    width: 100%;
+    height: auto;
+}
+
+.item-photo img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    padding: 10px;
+    border: solid 2px #D3D3D3;
+}
+
+#textdescr{
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 75px;
+    font-size: 1.3em;
+}
+.bpc{
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bpc h2, .bpc p{
+    width: 100%;
+    text-align: center;
+}
+
+.bpc a{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 110px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #603D07;
+    border: solid 2px rgb(59, 12, 12);
+    border-radius: 5%;
+    font-weight: 535;
+
+}
+
+#footer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo-foot{
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+.Cart, .CartImg, .CartText{
+    visibility: hidden;
+}
+
+.Cart{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto;
+    width: 940px;
+    height: 300px;
+    padding: 10px;
+}
+
+.CartImg{
+    width: 300px;
+    height: 300px;
+    border: solid #603D07 1px;
+    position: relative;
+}
+.CartText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 25px;
+}
+.carre{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: solid 1px #603D07;
+    z-index: -999;
+    box-shadow: inset 1px 1px 0 0 #603D07;
+}
+.un{
+    transform: rotate(-5deg);
+}
+.deux{
+    transform: rotate(-10deg);
+}
+.trois{
+    transform: rotate(-15deg);
+}
+.quatre{
+    transform: rotate(-20deg);
+}
+.cinq{
+    transform: rotate(-25deg);
+}
+.six{
+    transform: rotate(-30deg);
+}
+
+.animation1{
+    animation: slideleft 1s forwards;
+}
+@-webkit-keyframes slideleft {
+    from {
+        transform: rotate(0deg);
+        margin-left: -200%;
+    } to {
+        transform: rotate(360deg);
+        margin-left: 0%;
+    }
+}
+.animation2{
+    animation: slideright 1s forwards;
+}
+@-webkit-keyframes slideright {
+    from {
+        transform: rotate(0deg);
+        margin-right: -200%;
+    } to {
+        transform: rotate(360deg);
+        margin-right: 0%;
+    }
+}
+.animation1-1{
+    animation: slideright2 1s forwards;
+}
+@-webkit-keyframes slideright2 {
+    from {
+        margin-right: -200%;
+    } to {
+        margin-right: 0%;
+    }
+}
+.animation2-1{
+    animation: slideleft2 1s forwards;
+}
+@-webkit-keyframes slideleft2 {
+    from {
+        margin-left: -200%;
+    } to {
+        margin-left: 0%;
+    }
+}
+
+.CartText h3{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+#CartCroi{
+    background: url("Images/croissant.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 75%;
+}
+
+#CartBag{
+    background: url("Images/baguette.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 90%;
+}
+
+#CartChoc{
+    background: url("Images/pain-au-chocolat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    order: 2;
+}
+#CartCer{
+    background: url("Images/pain-cereale.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    order: 2;
+}
+#CartTrad{
+    background: url("Images/pain-tradition.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+}
+#CartMuf{
+    background: url("Images/muffin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+}
+
+#CartCho{
+    background: url("Images/chocolat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    order: 2;
+}
+
+#CartDon{
+    background: url("Images/donuts.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+}
+#CartTar{
+    background: url("Images/tarte.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    order: 2;
+}
+#CartTir{
+    background: url("Images/tiramisu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+}
+
+#CartBro{
+    background: url("Images/brownie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+}
+
+#CartLait{
+    background: url("Images/chocolat-au-lait.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+}
+
+#CartBlan{
+    background: url("Images/chocolat-blanc.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    order: 2;
+}
+#CartBou{
+    background: url("Images/chocolat-bouchee.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+}
+#CartChaud{
+    background: url("Images/chocolat-chaud.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    order: 2;
+}
+
+#content{
+    width: 100%;
+    padding: 30px 22% 20px 15%;
+    background-color: #603c074f;
+    box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.57);
+
+}
+
+.tr{
+    display: flex;
+    width: 100%;
+
+}
+
+.td{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin:0 20px 20px 0 ;
+}
+
+.td1{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+}
+
+.inputContact{
+    height: 50px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    border: solid #603D07 2px ;
+    font-size: 1em;
+    outline: none;
+}
+.erreurGlobale{
+    color: red;
+}
+
+#message{
+    height: 175px ;
+    width: calc(70% + 20px);
+    padding: 10px 10px;
+    resize: none;
+    border-radius: 10px;
+    border: solid #603D07 2px ;
+    outline: none;
+}
+
+#send{
+    width: calc(37% - 20px); ;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    background-color: #603c074f;
+    font-size: large;
+    outline: none;
+}
+#send:active{
+    background-color: #603c0780;
+}
+
+.inputErreur{
+    display: none;
+    color: red;
+}
+
+
+
+#content a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+#content .tr:last-child{
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 940px){
+    #Nav{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #Nav a{
+        margin-bottom: 10px;
+    }
+
+    #Nav a:nth-child(3){
+        order: -1;
+        width: 100%;
+    }
+    #logo{
+        margin: 0 auto 15px auto;
+        width: 20%;
+    }
+
+    #container-item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .item{
+        width: 50%;
+        margin-bottom: 100px;
+    }
+
+    .Cart{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        margin: 50px 0 25px 0;
+    }
+
+    .CartText{
+        width: 50%;
+        text-align: center;
+    }
+
+    #CartChoc, #CartCer, #CartCho, #CartTar, #CartBlan, #CartChaud{
+        order: 0;
+    }
+}

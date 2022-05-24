@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <script src="https://kit.fontawesome.com/f3f16a7b72.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Boulange d'Or</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="topNav">
+            <i class="i fas fa-phone-alt"></i>
+            <p>Tel : <span id="numTel">XX.XX.XX.XX.XX</span></p>
+            <i class="i fab fa-facebook-f"></i>
+            <i class="i fab fa-instagram"></i>
+        </div>
+        <div id="Nav">
+            <div class="sousnav">
+                <a id="transformHover" href="Boulangerie.html">BOULANGERIE</a>
+                <div class="souslignenav"></div>
+
+            </div>
+            <div class="sousnav">
+                <a id="transformHover" href="Pâtisserie.html">PÂTISSERIE</a>
+                <div class="souslignenav"></div>
+            </div>
+            <a href="index.html">
+                <div id="logo">
+                    <img src="Images/La Boulange d'or.png" title="Rien pour l'instant" alt="Logo de la boulange">
+                    <p>Boulanger - Pâtissier</p>
+                </div>
+            </a>
+            <div class="sousnav">
+                <a id="transformHover" href="Chocolaterie.html">CHOCOLATERIE</a>
+                <div class="souslignenav"></div>
+            </div>
+            <div class="sousnav">
+                <a id="transformHover" href="Contact.html">CONTACT</a>
+                <div class="souslignenav"></div>
+            </div>
+        </div>
+        <h2 class="titreh2">NOUS CONTACTER</h2>
+
+        <div id="content">
+            <p>Un problème ? Une question ? N'hésitez pas à nous contacter par mail, message ou bien par téléphone, Nous serons plus qu'heureux de vous repondre et vous partagez notre passion. Nous somme ouvert 24/7 et vous répondront dès que possible. En attendant profitez de ce splendide site fait avec amour et détermination.</p>
+            <br/><br/>
+           <p class="erreurGlobale" id="erreurGlobale"></p><br>
+            <form>
+                <div class="tr">
+                    <div class="td">
+                        <label for="Nom">Nom</label><br/>
+                        <input type="text" name="Nom" id="Nom" placeholder="nom" class="inputContact" minlength="5" maxlength="25" required/>
+                        <p id="erreurNom" style="color: red; display: none;">Votre Nom doit faire entre 5 et 25 caractères</p>
+                    </div>
+                    <div class="td">
+                        <label for="Prenom">Prénom</label><br/>
+                        <input type="text" name="Prenom" id="Prenom" placeholder="prénom" class="inputContact" minlength="5" maxlength="25" required/>
+                        <p id="erreurPrenom" style="color: red; display: none;">Votre Prénom doit faire entre 5 et 25 caractères</p>
+                    </div>
+                </div>
+                <div class="tr">
+                    <div class="td">
+                        <label for="mail">Adresse mail</label><br/>
+                        <input type="email" name="mail" id="mail" placeholder="adresse@mail.oui" class="inputContact" minlength="5" maxlength="25" required/>
+                        <p id="erreurMail" style="color: red; display: none;">Votre mail doit faire entre 5 et 25 caractères avec un "." ou un "@" </p>
+                    </div>
+                    <div class="td">
+                        <label for="num">Numéro de téléphone</label><br/>
+                        <input type="tel" name="num" id="num" placeholder="XX.XX.XX.XX.XX" maxlength="10" class="inputContact" required/>
+                        <p id="erreurNum" class="inputErreur">Le numéro doit comporter 10 chiffres sans espaces</p>
+                    </div>
+                </div>
+                
+                <div class="tr">
+                    <div class="td1">                    
+                    <label for="sujet">Sujet</label><br/>
+                    <input type="text" name="sujet" id="sujet" placeholder="Sujet" minlength="5" maxlength="25" class="inputContact" required/>
+                    <p id="erreurSujet" class="inputErreur">Votre Sujet doit faire entre 5 et 25 caractères</p><br>
+                </div>                   
+                </div>
+                
+                 <div >
+                    <label for="message">Votre message</label><br/><br/>
+                    <textarea name="message" id="message" placeholder="dis nous tout" minlength="25" maxlength="500" required></textarea><br/>
+                    <p id="erreurMessage" style="color: red; display: none;">Votre Prénom doit faire entre 25 et 500 caractères</p><br/><br/>
+                    <input type="submit" value="Envoyer" id="send"/>
+                    
+                 </div>
+            </form>
+            <br/>
+            <div class="tr">
+                <p>Vous préférez nous contacter par mail ? Ca se passe ici :</p>
+                <a href="mailto:LaBoulangedor@gmail.com"><img/><i class="fas fa-envelope-open-text"></i></a>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="footer">
+            <h2 class="titreh2">LA BOULANGERIE</h2>
+            <div class="logo-foot">  
+                <div>
+                    <img src="Images/icon1.jpg" alt="T'avais qu'à avoir des yeux">
+                </div>
+                <div>
+                    <p>Des produits 100% faits maison</p>
+                </div>
+            </div>
+            <div class="logo-foot">
+                <div>
+                    <img src="Images/icon2.jpg" alt="T'avais qu'à avoir des yeux">
+                </div>
+                <div>
+                    <p>Des matières premières locales et de qualité</p>
+                </div>
+            </div>
+            <div class="logo-foot">
+                <div>
+                    <img src="Images/icon3.jpg" alt="T'avais qu'à avoir des yeux">
+                </div>
+                <div>
+                    <p>Du pain cuit tout au long de la journée</p>
+                </div>
+            </div>
+            <div class="logo-foot">
+                <div>
+                    <img src="Images/icon4.jpg" alt="T'avais qu'à avoir des yeux">
+                </div>
+                <div>
+                    <p>Une équipe de 5 personnes à votre service</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
